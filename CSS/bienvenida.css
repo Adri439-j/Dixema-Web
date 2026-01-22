@@ -1,0 +1,157 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poopins', sans-serif;
+}
+
+
+:root {
+  /* Colors */
+  --white-color: #fff;
+  --dark-color: #343959;
+  --primary-color: #737AA8;
+  --secondary-color: #f3961c;
+  --naranja-claro:#F8BB84;
+  --light-pink-color: #f4F4FF;
+  --medium-gray-color: #ccc;
+}
+body {
+  background-color: var(--light-pink-color);
+}
+/* Header */
+.header {
+  height: 70px;
+  background: linear-gradient( 90deg, var(--dark-color) -20%, var(--primary-color) 51%);
+  display: flex;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/*  footer decorativo */
+.footer {
+  height: 70px;
+  background-color: var(--primary-color);
+}
+
+/* Botón regresar */
+.back-btn {
+  position: absolute;
+  left: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.back-btn:hover {
+  opacity: 0.8;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.logo img {
+  width: 90px;
+  height: 90px;
+}
+
+/* Contenedor principal */
+.container {
+  background-color: var(--light-pink-color);
+  min-height: calc(100vh - 140px);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Título */
+.title {
+  color: var(--dark-color);
+  font-size: 1.8rem;
+  margin-bottom: 50px;
+  line-height: 1.4;
+}
+
+.title span {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.cards a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Card general */
+.card {
+  width: 240px;
+  border-radius: 18px;
+  padding: 30px 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Proveedor */
+.provider {
+  background: linear-gradient( 3deg, var(--dark-color) 0%, var(--primary-color) 100%);
+}
+
+/* Comprador */
+.buyer {
+  background: linear-gradient( 3deg, var(--secondary-color) 0%, var(--naranja-claro) 100%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cards {
+    gap: 30px;
+  }
+}
